@@ -8,6 +8,14 @@ class SomeMathObject{
     constructor(){
         console.log("This is a class")
     }
+
+    [1+2](){
+        return "three"
+    }
+
+    ["add"](a,b){
+        return a+b
+    }
 }
 
 // module.exports.sum = sum
