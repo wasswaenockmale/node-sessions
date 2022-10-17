@@ -4,17 +4,22 @@ const sum = (a,b)=>{
 
 const PI = 3.14;
 
-class SomeMathObject{
-    constructor(){
-        console.log("This is a class")
+class SomeMathObject extends EventEmitter{
+    constructor(name){
+        super()
+        // console.log("This is a class")
+        this._name = name;
     }
 
-    [1+2](){
-        return "three"
-    }
+    // [1+2](){
+    //     return "three"
+    // }
 
-    ["add"](a,b){
-        return a+b
+    // ["add"](a,b){
+    //     return a+b
+    // }
+    get name(){
+        return this._name;
     }
 }
 

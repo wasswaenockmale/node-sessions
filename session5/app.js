@@ -6,6 +6,8 @@ console.log(some.add(1,2))
 console.log(some[3]())
 // new tutorial.SomeMathObject()
 
+// const firstOne = Symbol()
+// console.log(typeof firstOne === 'symbol')
 
 // What does the EventEmitter do in node 
 // const EventEmitter = require("events");
