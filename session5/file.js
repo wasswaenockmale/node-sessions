@@ -50,7 +50,14 @@ fs.readdir("./tutorial/more/",(err,files)=>{
                 else{
                     console.log("Sucessfully deleted the file...")
                 }
-            })
+            });
         }
+        fs.rmdir("./tutorial/more/",(err3)=>{
+            if(err3)
+                console.log(err3)
+            else{
+                console.log("100% deleted files plus more folder")
+            }
+        })
     }
 })
